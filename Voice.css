@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.animation {
+  text-align: center;
+  position: relative;
+  top: 300px;
+}
+b {
+  text-align: center;
+  background: linear-gradient(to left, violet, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.input_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 500px;
+}
+.cancelBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+ i {
+  color: white;
+  font-size: 25px;
+}
+.startBtn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+}
+.startBtn i {
+  color: black;
+}
+.muteBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: coral;
+}
+.input_container button {
+  border: none;
+}
+  .bars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 3%;
+        background-color: black;
+    }
+
+    .bar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        height: 50px;
+      margin-top: -300px;
+    }
+
+    .bar {
+        width: 20px;
+        animation: voiceWave 1s infinite alternate;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    @keyframes voiceWave {
+        0% {
+            height: 50px;
+        }
+        50% {
+            height: 150px;
+        }
+        100% {
+            height: 100px;
+        }
+    }
+
+    .bar:nth-child(2n) {
+        animation-duration: 1.2s;
+    }
+
+    .bar:nth-child(3n) {
+        animation-duration: 0.8s;
+    }
+
+    .bar:nth-child(4n) {
+        animation-duration: 1.5s;
+    }
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  border: 10px solid #0000;
+  box-sizing: border-box;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: scale(3);
+  background: 
+    radial-gradient(farthest-side,#fff 98%,#0000) 0    0/25px 25px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 100% 0/25px 25px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 100% 100%/25px 25px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 0 100%/25px 25px,
+    linear-gradient(#fff 0 0) 50%/40px 40px,
+    #000;
+  background-repeat:no-repeat;
+  filter: blur(1px) contrast(20);
+  animation: l12 0.8s infinite;
+}
+@keyframes l12 {
+  100%  {background-position:100% 0,100% 100%,0 100%,0 0,center}
+}

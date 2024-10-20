@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.maincont {
+  background-color: yellow;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, violet 100%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  height: 7%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.leftarrowBTN {
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  background: none;
+  border: none;
+}
+.header button {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 2%;
+  left: 1%;
+  background: none;
+  border: noe;
+}
+#leftBtn {
+  transform: scale(4);
+}
+.leftarrowSVG {
+  transform: scale(2.4);
+}
+.leftarrowTEXT {
+  position: fixed;
+  top: 1.5%;
+  left: 10%;
+  font-size: 35px;
+}
+.search {
+  position: fixed;
+  top: 1%;
+  left: 40%;
+  width: 150px;
+  padding: 5px; border-radius: 10px;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+}
+.profile {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 1.2%;
+  right: 2%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+.profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  position: static;
+}
+.logoimg {
+  position: relative;
+  top: 40px;
+  z-index: 2;
+  display: inline-block;
+  width: 50%;
+}
+
+.faqtext {
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rebeccapurple;
+  margin-bottom: 15px;
+}
+.accordion {
+  position: relative;
+  top: 50px;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.faqheading {
+  font-weight: bold;
+  font-family: "Palatino", serif;
+}
+.profilebtn {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 1.2%;
+  right: 0;
+  margin-left: 90%;
+  z-index: 70;
+  background: none;
+  border: none;
+}
+.contact {
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red; /* Set the color to white */
+  text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan, 0 0 70px #00f; /* Add multiple text shadows with different blur radius and colors */
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px;
+  position: relative;
+  bottom: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.email {
+  background-color: #ff2d55; /* Neon red color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 45, 85, 0.4); /* Neon red shadow */
+  }
+  
+  .email:hover {
+    background-color: yellow; /* Lighter shade of neon red on hover */
+    cursor: pointer;
+    color: black;
+  }
+  
+  .email::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 30%;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(30deg);
+    transition: all 0.8s ease;
+  }
+  
+  .email:hover::before {
+    left: 100%;
+  }
+.insta {
+  background-color: cyan; /* Neon red color */
+    color: black; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 45, 85, 0.4); /* Neon red shadow */
+  }
+  
+  .insta:hover {
+    background-color: red; /* Lighter shade of neon red on hover */
+    cursor: pointer;
+  }
+  
+  .insta::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 30%;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(30deg);
+    transition: all 0.8s ease;
+  }
+  
+  .insta:hover::before {
+    left: 100%;
+  }
+.youtube {
+  background-color: yellow; /* Neon red color */
+    color: black; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 45, 85, 0.4); /* Neon red shadow */
+  }
+  
+  .youtube:hover {
+    background-color: chartreuse; /* Lighter shade of neon red on hover */
+    cursor: pointer;
+  }
+  
+  .youtube::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 30%;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(30deg);
+    transition: all 0.8s ease;
+  }
+  
+  .youtube:hover::before {
+    left: 100%;
+  }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footertext {
+  font-family: "Garamond", serif;
+}
+.footer a {
+  text-decoration: none;
+}
+/*small screens*/
+@media (max-width: 320px) {
+  .header {
+    height: 11%;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logoimg {
+    position: relative;
+    top: 70px;
+  }
+  .faqtext {
+    margin-top: 150px;
+  }
+}
+/* Target all laptop screens */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .logoimg {
+    position: relative;
+    top: 140px;
+  }
+  .accordion {
+    top: 100px;
+  }
+  .faqtext {
+    margin-top: 200px;
+  }
+  .footerall {
+    position: relative;
+    bottom: 0;
+    margin: 10%;
+  }
+}

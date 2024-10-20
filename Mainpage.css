@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+}
+header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+header div {
+  display: flex; /* Add flex display to the div */
+  align-items: center; /* Center items vertically */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+header h1 {
+  margin: 10px;
+}
+
+header img {
+  width: 8%;
+  height: auto;
+}
+.video_container {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-right: -10px;
+  overflow: hidden;
+}
+
+#playPauseBtn {
+  position: absolute;
+  z-index: 2;
+  bottom: 25%; /* Adjust this value to position vertically */
+  right: 6%; /* Adjust this value to position horizontally */
+  
+}
+.custom_controls i {
+  transform: scale(2);
+  
+}
+.video_container p {
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.trynowbox {
+  position: absolute;
+  top: 75%;
+  left: 53%;
+  width: 150px;
+  border-radius: 25px;
+  text-overflow: hidden;
+  padding: 10px;
+  transform: scale(1.3) translate(-50%, -50%);
+  color: white;
+  border: none;
+  font-weight: bold;
+  height: auto;
+  white-space: nowrap;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+.trynowbox i {
+  color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 400px) and (min-height: 700px) and (max-height: 800px) {
+  /* CSS styles for screens within the specified width and height ranges */
+.custom_controls {
+  margin-bottom: 40%;
+}
+}
+.article {
+  position: relative;
+  top: 10px;
+  z-index: 10;
+  padding: 10px;
+  color: white;
+  font-family: serif;
+  overflow-x: hidden;
+  background-color: white;
+  color: black;
+  border-left: 7px solid violet; /* Corrected border property */
+}
+.headingdb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-bottom: 2px solid lightgreen;
+}
+.articlep {
+  color: #888;
+}
+.articled {
+  color: black;
+}
+.article-container {
+  color: white;
+  margin: 10px;
+  overflow-x: hidden;
+  line-height: 1.5;
+  font-family: serif;
+}
+.article-container h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.hr {
+  position: relative;
+  width: 90%;
+  height: 2px;
+  border-top: 2px solid white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.article-container p {
+  line-height: 1.5;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+.laptop {
+  display: inline-block;
+  max-width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #2c3e50;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  color: white;
+}
+.stcol {
+  color: white;
+  margin: 20px;
+}
+.stcol h1 {
+  font-size: 25px;
+  color: white;
+}
+.stcol a {
+  color: yellow;
+}
+.ndcol {
+  color: white;
+  margin: 20px;
+}
+.ndcol h1 {
+  font-size: 25px;
+}
+.ndcol li {
+  list-style-type: circle;
+  margin: 5px;
+}
+.ndcol button {
+  border: none;
+  background: none;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: auto;
+}
+.ndcol a {
+  color: white;
+}
+.img-fluid {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+.imgname {
+  white-space: nowrap;
+}
+.footertxt {
+  color: white;
+  text-align: center;
+}
+.vdo-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+.vdo-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}

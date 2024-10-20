@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mainpage-Clone AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="referrer" content="no-referrer">
+    <link rel="preconnect" href="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="preconnect" href="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png" type="image/x-icon">
+    <meta name="description" content="Clone AI is a helpful tool that uses advanced technology and open-source contributions. It runs on the ChatGPT API, giving quick and accurate answers to any text-based questions users have.">
+    <link rel="stylesheet" href="Mainpage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="content-policy" content="This website uses Bootstrap for styling, Google Fonts for typography, images from ImgBB, and integrates the OpenAI API and Firebase features. All content provided adheres to our community guidelines, including but not limited to: no offensive, harmful, or misleading content; respect for intellectual property rights; and compliance with applicable laws and regulations. Users are expected to engage respectfully and responsibly, and any misuse or abuse of the website's features will result in appropriate action, including account suspension or termination.">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="keywords" content="clone ai,Clone AI,chat bot,AI,ai,textai,text based ai,clone ai website,cloneai login">
+    <link rel="preconnect" href="https://i.ibb.co">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.7.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.7.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.7.2/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: black; box-shadow: none; }
+       body { border-top: 10px solid #white; } 
+      }
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <div>
+        <h1>
+          Clone AI
+        </h1>
+        <img src="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png" alt="logo">
+      </div>
+    </header>
+    <div class="video_container">
+  <video id="myVideo" width="100%" autoplay="autoplay" muted loop>
+    <source src="https://player.vimeo.com/external/922546876.hd.mp4?s=fb70018d129499af433a4487392e45825b81d51d&profile_id=175" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <button style="border: none; background: none; transform: scale(3); color: yellow;" id="playPauseBtn"><i class="bi bi-play"></i></button>
+  <button id="trynow" class="trynowbox">Try Clone AI <i class="bi bi-arrow-up-right-square"></i></button>
+  <div class="custom_controls">
+  </div>
+</div>
+    
+    <div class="article-container container">
+    <h1>
+      Introduction
+    </h1>
+    <p>
+      Welcome to Clone AI, the text prompt platform designed to assist with answering questions, queries, and clearing doubts. We are excited to announce the launch of our service on March 03, 2024.🎉
+    </p>
+    <div class="hr"></div>
+    <h1>Safety and Security</h1>
+    <p>At Clone AI, we prioritize the safety and security of our users data and privacy. We do not collect any user history or personal information. However, we do collect samples solely for the purpose of improving our AI and maintaining its accuracy. For more information about our safety and security measures, please visit our dedicated page.visit our <a href="Privacy.html">privacy & policy</a> for more details</p>
+    <div class="hr"></div>
+      <div class="vdo-container">
+      <video id="myvedio" class="vdo" autoplay="autoplay" muted loop>
+        <source src="pexels-google-deepmind-18069166 (2160p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        <button style="border: none; background: none; transform: scale(3); color: red;"id="playpausebtn"><i class="bi bi-play"></i></button>
+         <div class="custom-controls">
+       </div>
+      </div>
+    <h1>OpenAI Documentation</h1>
+    <p>Please note that Clone AI operates entirely on the OpenAI API key to access its engine and generate responses. While we strive for accuracy, it is important to aware that the AI may occasionally produce incorrect information. We advise users to exercise caution when relying on AI-generated content.</p>
+    <div class="hr"></div>
+    <img class="laptop" src="https://i.ibb.co/Pm3mcmw/filmmakers-2838932.jpg" alt="img">
+    <hr>
+    </div>
+    <div class="article" id="article"></div>
+            <br>
+    
+      <footer>
+        <div class="grid">
+        <div class="stcol">
+          <h1>
+            See Also  👇
+          </h1>
+          <br>
+          <ul>
+            <li>
+              <a href="https://openai.com/policies/terms-of-use" target="_blank">Open AI terms and usages </a><br>
+            </li>
+            <li>
+              <a href="privacy policy.html">Our privacy & policy</a><br>
+            </li>    
+            <li>
+               <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase privacy and policy</a><br>
+            </li>            
+              </ul>
+        </div>
+          
+        <div class="ndcol">
+          <h1>
+            Reach out
+          </h1>
+          <ul>
+            <li>
+              <a href="#">
+              <button>
+                <i class="bi bi-facebook"></i>
+              </button>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <button>
+                  <i class="bi bi-instagram"></i>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <button>
+                  <i class="bi bi-youtube"></i>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <button>
+                  <i class="bi bi-envelope"></i>
+                </button>
+              </a>
+            </li>
+          </ul>
+          <div class="imgname">
+          <img class="img-fluid" src="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png">
+          <h3>CLONE AI✨</h3>
+          </div>
+        </div>
+        </div>
+        <div class="footertxt">
+          ©2024 Clone AI All Rights Reserved
+        </div>
+        <div class="footertxt">
+          <a href="Privacy.html">
+            Term & Conditions|Privacy and Policy
+          </a>
+          </div>
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Mainpage.js"></script>
+    <script type="module" src="mainpagearticle.js"></script>
+    <script type="module" src="Mainpage0.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

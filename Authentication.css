@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.title {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin-top: 10%;
+  white-space: nowrap;
+  color: white;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  position: relative; 
+  }
+h1 {
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: typewriter 5s steps(30) forwards;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.Btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 170px;
+  }
+.Btns button {
+  width: 85%;
+  padding: 3%;
+  border-radius: 7px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.second_text {
+  text-align: center;
+  position: relative;
+  top: 160px;
+  color: aliceblue;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  line-height: auto;
+  position: relative;
+  top: 115px;
+}
+.footer_text {
+  text-align: center !important;
+  color: cornflowerblue;
+  bottom: 2%;
+  position: fixed;
+  left: 0; 
+  right: 0; 
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: deepskyblue;
+}
+.Btns button:hover {
+  background-color: darkblue;
+}
+/*small screens*/
+@media (max-width: 320px) {
+  .Btns {
+    top: 60px;
+  }
+  .second_text {
+    top: 50px;
+  }
+  .logo {
+    top: 35px;
+  }
+  }
+/* Target all laptop screens */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .Btns {
+    top: 35px;
+  }
+  .logo {
+    top: 10px;
+    width: 7%;
+  }
+  .second_text {
+    top: 20px;
+  }
+  }

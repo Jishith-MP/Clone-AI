@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header i {
+  position: fixed;
+  top: 2%;
+  left: 4%;
+  transform: scale(2);
+}
+header button {
+  width: 10%;
+  height: 40px;
+  position: fixed;
+  top: 1%;
+  left: 2%;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+header button:active {
+  background-color: slategray;
+}
+h1 {
+  text-align: center !important;
+  position: relative;
+  top: 4rem;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 10%;
+  height: auto;
+  position: relative;
+  top: 50px;
+}
+form {
+  position: fixed;
+  top: 15%;
+}
+.form-control:focus {
+  outline: none;
+  border-color: purple;
+  box-shadow: none;
+}
+.forgot_pass {
+  margin: 10% 0% 5% 1%;
+}
+.LoginBtn {
+  width: 100%;
+  position: relative;
+}
+.LoginBtn:hover {
+  background-color: darkgreen;
+}
+
+.google-Btn {
+  width: 87% !important;
+  border-radius: 10px;
+  border: 1px solid slategrey;
+  height: 7%;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 75%;
+  margin-left: 1%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.googlesvg {
+  width: 30px;
+  height: auto;
+}
+.footer_text {
+  text-align: center !important;
+  color: cornflowerblue;
+  bottom: 2%;
+  position: fixed;
+  left: 0; 
+  right: 0; 
+}
+.or {
+  text-align: center;
+  position: relative;
+  top: 29rem;
+  z-index: 1;
+}
+a:hover {
+  color: violet;
+}
+.loader {
+  width: 22px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #F10C49;
+  animation: l10 1.5s infinite linear;
+}
+@keyframes l10 {
+  0%    {box-shadow: 
+          0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, 0 0 #E3AAD6,
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+  12.5% {box-shadow: 
+          0 0 #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+  25%   {box-shadow: 
+          0 0 #F4DD51, 0 0 #E3AAD6,30px 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+          0 30px #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+  37.5% {box-shadow: 
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, calc(30px*0.707) calc(30px*0.707) #E3AAD6,
+          0 30px #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+  50%   {box-shadow: 
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+          0 30px #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,-30px 0 #F4DD51, 0 0 #E3AAD6}
+  62.5% {box-shadow: 
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+          0 0 #F4DD51, calc(-30px*0.707) calc(30px*0.707) #E3AAD6,-30px 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+  75%   {box-shadow: 
+          0 -30px #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+          0 0 #F4DD51, 0 0 #E3AAD6,-30px 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+  87.5% {box-shadow: 
+          0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6,
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, calc(-30px*0.707) calc(-30px*0.707) #E3AAD6}
+  100%  {box-shadow: 
+          0 -30px #F4DD51, calc(30px*0.707) calc(-30px*0.707) #E3AAD6,30px 0 #F4DD51, 0 0 #E3AAD6,
+          0 0 #F4DD51, 0 0 #E3AAD6,0 0 #F4DD51, 0 0 #E3AAD6}
+
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  }
+/*small screens*/
+@media (max-width: 320px) {
+  form {
+    top: 5%;
+  }
+  .logo {
+    display: none;
+  }
+  h1 {
+    top: 2%;
+  }
+  .forgot_pass {
+    position: fixed;
+    top: 60%;
+  }
+  .or {
+    top: 65%;
+  }
+  .google-Btn {
+    top: 85%;
+  }
+}
+/* Target all laptop screens */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  form {
+    top: 55%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 7px;
+  }
+  .footer_text {
+    bottom: 1;
+  }
+  .forgot_pass {
+    position: fixed;
+    top: 60%;
+  }
+  .or {
+    top: 65px;
+  }
+  .google-Btn {
+    position: fixed;
+    top: 110%;
+    width: 100%;
+    height: 13%;
+  }
+  header button{
+    cursor: none;
+    border-radius: 50%;
+    width: 6%;
+    height: 6%;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  form {
+    top: 35%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+  .google-Btn {
+    top: 100%;
+    height: 10%;
+  }
+  .or {
+    top: 90%;
+  }
+  header button {
+    width: 5%;
+  }
+    }

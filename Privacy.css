@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  min-width: 100vw;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+.btn {
+  position: fixed;
+  top: 14%;
+  left: 8%;
+  transform: scale(2);
+}
+.container {
+  position: relative;
+  top: 120px;
+  color: black;
+  z-index: 2;
+  overflow-x: hidden;
+  font-family: "Truculenta", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.policy-item {
+  list-style-type: circle;
+}
+small {
+  position: relative;
+  top: 100px;
+  color: black;
+  left: 30px;
+}
+hr {
+  position: relative;
+  top: 110px;
+  width: 60%;
+  background-color: black;
+  border: 2px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #2c3e50;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  color: white;
+  margin-top: 90px;
+}
+.stcol {
+  color: white;
+  margin: 20px;
+}
+.stcol h1 {
+  font-size: 25px;
+  color: white;
+}
+.stcol a {
+  color: yellow;
+}
+.ndcol {
+  color: white;
+  margin: 20px;
+}
+.ndcol h1 {
+  font-size: 25px;
+}
+.ndcol li {
+  list-style-type: circle;
+  margin: 5px;
+}
+.ndcol button {
+  border: none;
+  background: none;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: auto;
+}
+.ndcol a {
+  color: white;
+}
+.img-fluid {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+.imgname {
+  white-space: nowrap;
+}
+.footertxt {
+  color: white;
+  text-align: center;
+}
+/* Target all laptop screens */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  header {
+    height: 5%;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 5%;
+  }
+}

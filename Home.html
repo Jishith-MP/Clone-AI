@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Clone AI is a helpful tool that uses advanced technology and open-source contributions. It runs on the ChatGPT API, giving quick and accurate answers to any text-based questions users have.">
+  <meta name="content-policy" content="This website uses Bootstrap for styling, Google Fonts for typography, images from ImgBB, and integrates the OpenAI API and Firebase features. All content provided adheres to our community guidelines, including but not limited to: no offensive, harmful, or misleading content; respect for intellectual property rights; and compliance with applicable laws and regulations. Users are expected to engage respectfully and responsibly, and any misuse or abuse of the website's features will result in appropriate action, including account suspension or termination.">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="HomeMediaqueries.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="icon" href="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <meta name="keywords" content="clone ai,Clone AI,chat bot,AI,ai,textai,text based ai,clone ai website,cloneai login">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Stint+Ultra+Condensed&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
+   <title>CLONE AI</title>
+</head>
+<body>
+  <div id="blurbg"></div>
+  <div id="delete-confirm-box">
+    <p>Are you sure you want to delete the account? This action will permanently delete all your data.</p>
+    <hr>
+    <button id="cancelBtn" class="btn btn-secondary mr-2">Cancel</button>
+    <button id="delete-bTn" class="btn btn-danger">Delete</button>
+</div>
+  <div id="delete-chathis-box">
+    <p>Are you sure you want to delete all chat history? This action will permanently delete all your data.</p>
+    <hr>
+    <button id="cancelButtn" class="btn btn-secondary mr-2">Cancel</button>
+    <button id="delete-BTN" class="btn btn-danger">Delete</button>
+</div>
+
+    <div class="settingsbox" id="setting">
+    <button id="closesettings"><i id="closesett" class="bi bi-x-lg"></i></button>
+  <b style="margin: 20px;">Settings</b>
+  <div id="hrs" style="width: 100%; height: 3px; background-color: white;"></div>
+    <div id="colss">
+  <div id="catogory">
+    <button id="general"><b>General</b></button>
+    <hr>
+    <button id="data_management"><b>Data management</b></button>
+    <hr>
+    <button  id="feedbackBtn"><b>Feedback</b></button>
+    <hr>
+  </div>
+    
+  <div id="Datas">
+    <div style="dislay: none;"id="data-general">
+     <button id="plusmembership">
+      Plus Membership<i class="bi bi-lightning-fill"></i>
+      </button><br>
+      <label id="langa" for="language">Language:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="ml">Malayalam</option>
+        <option value="hi">Hindi</option>
+        <option value="de">German</option>
+        <option value="pt">Portuguese</option>
+      </select>
+          <div id="version">
+      <b style="color: violet;">Clone AI</b>
+      <small>Version1.5</small>
+    </div>
+    </div>
+
+    <div style="display: none;" id="data-Data_management">
+      <button id="export">
+        <i class="bi bi-download"></i>Export Data
+      </button>
+      <button id="clear">
+        <i class="bi bi-eraser"></i>Clear All History
+      </button>
+      <button id="Acdlt">
+<i class="bi bi-trash"></i><b>Delete Account</b>
+      </button>
+    </div>
+    <div style="display: none;"id="data-feedback">
+      <p>none</p>
+    </div>
+  </div>
+    </div>
+</div>
+  <div class="online" id="onLine">
+    <p>You are curruntly offline. Please check your internet connection and try again!</p>
+    <button id="closeofflinebox">
+      <i class="bi bi-x"></i>
+    </button>
+  </div>
+  <div id="likebox">
+    <p>
+      The response you liked has been noted for future reference. Your feedback helps us improve our service.
+    </p>
+    <button id="closelikebox">
+      <i class="bi bi-x"></i>
+    </button>
+  </div>
+    <div id="dislikebox">
+    <p>
+      We appreciate your feedback. The response you disliked has been duly noted. We strive to enhance our service based on your input.
+    </p>
+    <button id="closedislikebox">
+      <i class="bi bi-x"></i>
+    </button>
+  </div>
+  <div id="copyresponsebox">
+    <p>
+      Copied To Clipboard
+    </p>
+  </div>
+      <!--header--></!--header-->
+
+<header id="header" class="align-self-center">
+  <div class="row align-items-center">
+    <div class="col-2 d-flex justify-content-start align-items-center">
+       <button class="navbutton" id="navbar-toggler" onclick="mainnavbar()">
+        <i class="bi bi-list"></i>
+       </button>
+    </div>
+      
+    <div class="col-6 justify-content-center align-items-center text-xl-center heading">
+      <h2 id="head">Clone AI <span style="color: violet">
+        1.5</span></h2>
+    </div>
+  </div>
+</header>
+</div>
+<div id="wrap">
+<input type="checkbox" id="swipeBtn" style="visibility: hidden;">
+<label for="swipeBtn" id="swipenav-bar">
+    <i class="bi bi-arrow-right"></i>
+</label>
+</div>
+  <!--navbar--></!--navbar-->
+    <button id="bi-x">
+      <i id="bi-xx" class="bi bi-x-lg"></i>
+    </button>
+<nav>
+       <div class="navbox" id="navbox">
+   <!--Delete and copy Button--></!--Delete>
+ <div class="deletecopybox" id="deletecopybox">
+    <!-- HTML buttons with unique IDs and indices -->
+    <div class="dlt">
+        <!-- Assume you have a loop generating multiple buttons -->
+        <button class="delete-button" id="delete-button">
+            <i class="bi bi-trash-fill"></i><b>Delete</b>
+        </button>
+    </div>
+     
+    <div class="copy">
+        <button id="copyresponse">
+            <i class="bi bi-clipboard2-fill"></i><b>copy</b>
+        </button>
+    </div>
+</div>
+    <input class="search" type="search" id="search" placeholder="Search History....">
+    <h2 id="hishead" class="h2">Clone AI</h2>
+  <div id="hisline" style="width: 90%; height: 2px; background-color: white;"></div>
+        <div class="sk-chase" id="loader">
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+  <div class="sk-chase-dot"></div>
+</div>
+        
+        <div class="box" id="box">
+    </div>
+  <button class="Profilebutton" id="prof-Btn">
+<div class="profile_container">
+  <div class="col1">
+    <div class="profile" id="profile">
+      <i class="bi bi-person-fill"></i>
+    </div>
+  </div>
+  <div class="col2">
+    <div class="nameandemail" id="nameandemail">
+      <div class="name"></div>
+      <div class="email"></div>
+    </div>
+  </div>
+</div>
+</div>
+    </button>
+  <div id="news-box" class="news">
+  <button class="newsboxclose" onclick="newsclosebutton()">
+    <i class="bi bi-x-square"></i>
+  </button>
+  <p id="newscontent"></p>
+</div>
+</nav>
+<div class="parent" id="parent">
+  <div class="settings" id="settings">
+    <div id="set">
+      <button id="settingss"><i class="bi bi-gear"></i><b>Settings</b></button>
+    </div>
+    <div id="help">
+      <button id="faq"><i class="bi bi-box-arrow-up-right"></i><b>Help & Support</b></button>
+    </div>
+<div id="themesBtn" style="display: flex; align-items: center; margin-left: 9%;">
+    <b style="color: white">Theme</b>
+    <div style="margin-left: 35%;" class="toggle">
+        <input type="checkbox" id="toggleBtn">
+        <label for="toggleBtn" class="toggle-label">
+            <i class="bi bi-brightness-alt-high-fill" style="position: absolute;" id="icon"></i>
+        </label>
+    </div>
+</div>
+    </div>
+    <div style="width: 90%; height: 2px; background-color: white; margin-top: 7%; margin-left: 5%; color: white;"></div>
+    <div id="login">
+      <button id="Logout"><i class="bi bi-box-arrow-right"></i><b>Logout</b></button>
+    </div>
+  </div>
+</div>
+<div class="body">
+<!--New page--></!--New>
+<button class="newpage" onclick="newpage()">    
+    <i id="newpage" class="bi bi-plus-square-fill"></i>
+</button>
+<!--chat area-->
+
+<div id="chatarea" class="chatarea">
+    <div id="infos" class="infos">
+        <img class="chatareaimg" id="chatareaimg" src="https://i.ibb.co/FJPKN7b/IMG-20240128-151906.png" alt="chatarea-logo">
+        <b class="chatareatext" id="chatareatext">How can I help you today?</b>
+    </div>
+  <div id="namecontain">
+    <h1 id="greetings"></h1>
+    <h1 id="username"></h1>
+  </div>
+  <div id="containersuggest" class="containersuggest">
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Discover the secrets to a healthier lifestyle.')">Discover the secrets to a<br> healthier lifestyle.</p>   
+  </div>
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Explore the world of sustainable living.')">Explore the world of <br>sustainable living.</p>
+  </div>
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Learn how to master the art of photography.')">Learn how to master the<br>art of photography.</p>
+  </div>
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Explore the best travel destinations for your next vacation.')">Explore the best travel<br> destinations for your<br> next vacation.</p>
+  </div>
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Discover delicious and easy-to-make recipes.')">Discover delicious <br>and easy-to-make recipes.</p>
+  </div>
+  <div class="boxessuggest">
+    <p class="box-text" onclick="handleClick('Learn about the history and culture of different countries.')">Learn about the history<br> and culture of<br> different countries.</p>
+  </div>
+</div>
+
+<!--inputs--></!--inputs-->
+<div id="scrolltobottom">
+<button id="scrollButton">    
+  <i class="bi bi-chevron-double-down"></i>
+</button>
+</div>
+
+<div class="input-container">
+  <textarea class="inputs" type="text" id="input" placeholder="Enter A Prompt Here..." oninput="checkTextarea()"></textarea>
+  <button class="button" id="sendButton" disabled>
+    <div class="generate" id="p">
+        <span class="material-icons" id="buttonText">
+          arrow_upward
+        </span>
+    </div>    
+  </button>
+  <button id="headphonesIcon" style="z-index: 100;">
+  <i id="headphones" class="bi bi-headphones"></i>
+  </button>
+</div>
+
+<p id="lasttext" class="lasttext">Clone AI may produce inaccurate informations</p>
+       <!--all scripts-->
+    <script defer async src="HomeAPI.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="module" src="Home0.js"></script>
+    <script type="module" src="History0.js"></script>
+    <script type="text/javascript" src="History.js"></script>
+    <script type="module" src="Home.js" defer></script>
+    <script type="module" src="Homesettings0.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        hljs.highlightAll();
+    });
+</script>
+</body>
+</html>

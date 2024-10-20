@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clone AI/log in | sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Login.css">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png" type="image/x-icon">
+    <meta name="description" content="Clone AI is a helpful tool that uses advanced technology and open-source contributions. It runs on the ChatGPT API, giving quick and accurate answers to any text-based questions users have.">
+    <meta name="content-policy" content="This website uses Bootstrap for styling, Google Fonts for typography, images from ImgBB, and integrates the OpenAI API and Firebase features. All content provided adheres to our community guidelines, including but not limited to: no offensive, harmful, or misleading content; respect for intellectual property rights; and compliance with applicable laws and regulations. Users are expected to engage respectfully and responsibly, and any misuse or abuse of the website's features will result in appropriate action, including account suspension or termination.">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="keywords" content="clone ai,Clone AI,chat bot,AI,ai,textai,text based ai,clone ai website,cloneai login">
+  </head>
+  <body>
+    
+    <header>
+      
+<button onclick="window.location.href = 'Register.html'">
+    <i class="bi bi-arrow-left"></i>
+</button>
+      
+      <div class="logo">
+        <img src="https://i.ibb.co/Rc9bjfp/IMG-20240128-151906.png" alt="Logo_">
+      </div>
+      
+    <h1>WELCOME</h1>
+    </header>
+    <!-- Form -->
+<form id="MainForm" class="w-45 m-4">
+    
+    <!-- Email input -->
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInp" placeholder="name@example.com">
+        <label for="floatingInput">Email</label>
+    </div>
+    
+    <!-- Password input -->
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="PasswordInp" placeholder="Password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" title="Password must contain at least one letter, one number, and be at least 8 characters long." required>
+        <label for="floatingPassword">Password</label>
+    </div>
+            
+     <!-- Agreement checkbox -->
+  <label class="label" for="agreeCheckbox" style="display: flex; align-items: center;">
+    <input type="checkbox" id="agreeCheckbox" style="margin-right: 5px;">
+    <div class="policy_link" id="policies" style="flex: 1;">
+        I agree to the <a href="Privacy.html" style="color: slategrey;">privacy & policy</a> and <a href="Privacy.html" style="color: slategrey;">terms & conditions</a>
+    </div>
+  </label><br>
+
+    <!-- Login button -->
+  <button id="proceedButton" type="submit" class="btn btn-success LoginBtn">
+    <b>Log In</b>
+  </button>
+
+    <!-- Forgot password link -->
+  <div class="forgot_pass">
+    <a style="text-decoration: none;" class="mt-2" href="reset_password.html">Forgot Password?</a>
+    <br>
+  </div>
+    <!-- Horizontal line -->
+    <hr class="line">
+    
+    <!-- Signup message -->
+    <div class="text-in-middle text-muted signup">
+      Dont have an Account?
+      <a style="text-decoration: none; color: violet;"href="Register.html">Signup</a>
+    </div>
+         
+    <!-- Loading overlay -->
+    <div id="overlay" class="loading-overlay">
+        <div id="spinner" style="display: none;">
+            <div class="loader"></div>
+        </div>
+    </div>
+        <p class="or">or</p>
+      
+<button class="google-Btn" id="googleSignInButton">
+    <svg class="googlesvg" viewBox="0 0 48 48">
+  <title>Google Logo</title>
+  <clipPath id="g">
+    <path d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/>
+  </clipPath>
+  <g class="colors" clip-path="url(#g)">
+    <path fill="#FBBC05" d="M0 37V11l17 13z"/>
+    <path fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/>
+    <path fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/>
+    <path fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/>
+  </g>
+    </svg>Continue with Google
+</button>
+  
+
+</form>
+    <div class="footer_text">
+      <a href="Privacy.html" target="_blank">Terms of use | Privacy Policy</a>
+    </div>
+  
+      <div id="overlay" class="loading-overlay">
+        <div id="spinner" style="display: none;">
+        <div class="loader">
+      </div>
+        </div>
+      </div>
+      <script type="module" src="Login.js"></script>
+      <script type="module" src="LoginO.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
